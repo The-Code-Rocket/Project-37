@@ -89,7 +89,7 @@ function draw() {
     spawnClouds();
     spawnObstacles();
 
-    if ((keyDown(UP_ARROW) || touches == true) && trex.y >= 151.5) {
+    if ((keyDown(UP_ARROW) || touches.length) && trex.y >= 151.5) {
       touches.length = 0;
       trex.velocityY = -15;
       jump.play();
