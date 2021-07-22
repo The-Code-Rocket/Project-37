@@ -150,6 +150,7 @@ function draw() {
     cloudsGroup.setLifetimeEach(-1);
 
     if (mousePressedOver(restart) || touches.length) {
+      touches.length = 0;
       reset();
     }
   }
